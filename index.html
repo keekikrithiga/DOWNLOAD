@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Download File</title>
+<script>
+window.onload = function() {
+    // Create a dummy link element
+    var link = document.createElement('a');
+    link.href = 'path_to_your_file'; // Specify the path to your file here
+    link.download = 'filename_to_save_as'; // Specify the filename to save as here
+    document.body.appendChild(link);
+    link.click(); // Simulate a click on the link to initiate the download
+    document.body.removeChild(link); // Clean up the link element
+};
+</script>
+</head>
+<body>
+<!-- Optional: You can include a message for users -->
+<h1>Downloading file...</h1>
+</body>
+</html>
